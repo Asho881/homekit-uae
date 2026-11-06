@@ -79,7 +79,7 @@ const CONFIG = {
   // Noon / Temu: after approval, put your network's tracking-link prefix here.
   // Leave "" to use plain store links. Example: "https://your-network.link/click?url="
   noonPrefix: "",
-  temuPrefix: ""
+  temuPrefix: "", temuLink: "https://temu.to/k/elk47snynxn"
 };
 
 /* ============ PRODUCTS: ADD / EDIT HERE ============
@@ -128,7 +128,7 @@ const enc = encodeURIComponent;
 const links = q => ({
   amazon: `https://www.amazon.ae/s?k=${enc(q)}&tag=${enc(CONFIG.amazonTag)}`,
   noon: wrap(CONFIG.noonPrefix, `https://www.noon.com/uae-en/search/?q=${enc(q)}`),
-  temu: wrap(CONFIG.temuPrefix, `https://www.temu.com/search_result.html?search_key=${enc(q)}`)
+  temu: CONFIG.temuLink || wrap(CONFIG.temuPrefix, `https://www.temu.com/search_result.html?search_key=${enc(q)}`)
 });
 function wrap(prefix, url){ return prefix ? prefix + enc(url) : url; }
 
