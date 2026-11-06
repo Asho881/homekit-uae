@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HomeKit UAE – Smart Home &amp; Kitchen Buying Guides for the UAE</title>
+<meta name="description" content="Plain-English buying guides for kitchen and home products in the UAE, with quick links to compare prices on Amazon.ae, Noon and Temu.">
+<style>
+  :root{--ink:#16231f;--muted:#5b6b66;--bg:#f6faf8;--card:#fff;--line:#dfe9e5;--accent:#0f766e;--accent2:#e8590c;--chip:#e3f2ee}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+  header{background:linear-gradient(135deg,#0f766e,#115e59);color:#fff;padding:44px 20px 52px}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  header h1{margin:0 0 8px;font-size:2rem;letter-spacing:-.02em}
+  header p{margin:0;max-width:640px;opacity:.92}
+  .disclosure{background:#fff7ed;border-bottom:1px solid #fed7aa;color:#7c2d12;font-size:.85rem;padding:9px 20px;text-align:center}
+  .tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:-26px auto 22px;position:relative}
+  .search{flex:1 1 240px;padding:13px 16px;border:1px solid var(--line);border-radius:12px;font-size:1rem;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,.07)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+  .chip{border:0;background:var(--chip);color:var(--accent);padding:8px 15px;border-radius:99px;font-weight:600;cursor:pointer;font-size:.9rem}
+  .chip.on{background:var(--accent);color:#fff}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column}
+  .top{display:flex;gap:12px;align-items:center;margin-bottom:8px}
+  .emoji{font-size:2rem;background:var(--chip);width:52px;height:52px;border-radius:14px;display:grid;place-items:center;flex:none}
+  .card h3{margin:0;font-size:1.1rem}
+  .tag{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  .card p{margin:6px 0 10px;color:var(--muted);font-size:.95rem}
+  .card ul{margin:0 0 14px;padding-left:18px;font-size:.92rem}
+  .card li{margin:3px 0}
+  .btns{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px}
+  .btn{flex:1 1 auto;text-align:center;text-decoration:none;font-weight:700;font-size:.85rem;padding:10px 12px;border-radius:10px;color:#fff}
+  .amz{background:#232f3e}.noon{background:#c8a600;color:#1c1a00}.temu{background:var(--accent2)}
+  .btn:hover{filter:brightness(1.1)}
+  .empty{display:none;text-align:center;color:var(--muted);padding:40px 0}
+  section.info{margin:46px 0 10px}
+  section.info h2{margin:0 0 8px}
+  .how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .how div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
+  footer{margin-top:50px;border-top:1px solid var(--line);padding:26px 0 40px;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="disclosure">Affiliate disclosure: some links on this site are affiliate links. If you buy through them we may earn a commission at no extra cost to you.</div>
+<header>
+  <div class="wrap">
+    <h1>HomeKit UAE</h1>
+    <p>Honest, plain-English buying guides for kitchen and home products in the UAE. Know what to look for, then compare prices on Amazon.ae, Noon and Temu in one click.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="tools"><input id="q" class="search" type="search" placeholder="Search products, e.g. air fryer…" aria-label="Search products"></div>
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty">No guides match that search yet. Try another word.</div>
+
+  <section class="info">
+    <h2>How HomeKit works</h2>
+    <div class="how">
+      <div><strong>1. Read the guide</strong><br>Short checklists of what actually matters when buying each product, so you don't overpay for features you won't use.</div>
+      <div><strong>2. Compare prices</strong><br>Buttons open live results on each store. Prices and stock change daily, so always check the store page.</div>
+      <div><strong>3. Buy where it's best</strong><br>Check delivery time, return policy and seller rating before you order, especially on marketplace sellers.</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Affiliate disclosure.</strong> HomeKit UAE is a participant in affiliate programs, including Amazon Associates, and may earn commissions from qualifying purchases made through links on this site. This does not change the price you pay. Prices, availability and delivery terms are set by each store and can change at any time.</p>
+    <p>HomeKit UAE is an independent guide and is not owned by or officially connected to Amazon, Noon or Temu. All store names are trademarks of their owners.</p>
+  </div>
+</footer>
+
+<script>
+/* ============ SETTINGS: EDIT THESE ============ */
+const CONFIG = {
+  amazonTag: "YOUR-AMAZON-AE-TAG-21",   // your Amazon.ae Associates tag after approval
+  // Noon / Temu: after approval, put your network's tracking-link prefix here.
+  // Leave "" to use plain store links. Example: "https://your-network.link/click?url="
+  noonPrefix: "",
+  temuPrefix: ""
+};
+
+/* ============ PRODUCTS: ADD / EDIT HERE ============
+   query = the search words sent to each store. No prices are shown on purpose. */
+const PRODUCTS = [
+  {name:"Air Fryer", cat:"Cooking", emoji:"🍟", query:"air fryer",
+   why:"Cooks with far less oil than deep frying and heats faster than a full oven, which helps in hot months.",
+   look:["Capacity: 3–4L for 1–2 people, 5–7L for a family","Removable, dishwasher-safe basket","Digital temperature control up to 200°C","A window or dual-zone model if you cook two things at once"]},
+  {name:"Electric Kettle", cat:"Cooking", emoji:"☕", query:"electric kettle stainless steel",
+   why:"A daily-use item, so build quality and safety matter more than extra features.",
+   look:["Stainless-steel or glass body with auto shut-off","Boil-dry protection","1.5–1.7L is enough for most homes","Concealed heating element is easier to descale"]},
+  {name:"Digital Kitchen Scale", cat:"Cooking", emoji:"⚖️", query:"digital kitchen scale",
+   why:"Cheap, accurate and the easiest way to get consistent baking and portions.",
+   look:["Reads to 1 g, capacity 5 kg","Tare (zero) button","Flat, wipeable surface","Uses common batteries or USB charging"]},
+  {name:"Blender", cat:"Appliances", emoji:"🥤", query:"blender smoothie",
+   why:"Good for smoothies, soups and sauces. Motor power and jar material are what separate good from average.",
+   look:["600W+ for smoothies, 1000W+ for ice and nuts","Glass or BPA-free jar","Stainless-steel blades","Pulse and several speeds"]},
+  {name:"Milk Frother", cat:"Appliances", emoji:"🥛", query:"milk frother electric",
+   why:"A low-cost way to make café-style coffee at home.",
+   look:["Hot and cold froth modes","Non-stick inside for easy cleaning","Auto shut-off","Capacity 250–300 ml"]},
+  {name:"Coffee Maker", cat:"Appliances", emoji:"🫖", query:"coffee maker",
+   why:"Pick the type first (drip, capsule or espresso), then compare features within it.",
+   look:["Drip: 1.2L+ carafe and a keep-warm plate","Capsule: check capsule price and availability in the UAE","Removable water tank","Programmable timer if you want coffee on waking"]},
+  {name:"Non-Stick Pan Set", cat:"Cooking", emoji:"🍳", query:"non stick pan set",
+   why:"A decent set lasts years. Thick bases and good coating are worth paying a little more for.",
+   look:["PFOA-free coating","Heavy, flat base that works on induction","Heat-resistant handles","Include a lid size that fits the pans"]},
+  {name:"Food Storage Containers", cat:"Organisation", emoji:"🥡", query:"food storage containers set airtight",
+   why:"Helps cut food waste and keeps the fridge organised.",
+   look:["Airtight lids with silicone seals","Microwave and freezer safe","Glass lasts longer, plastic is lighter","Stackable shapes save space"]},
+  {name:"Robot Vacuum", cat:"Cleaning", emoji:"🤖", query:"robot vacuum cleaner",
+   why:"Great for dusty UAE homes if you have mostly hard floors. Mapping quality and suction decide results.",
+   look:["Laser or camera mapping, not random bumping","Suction 2000 Pa or more","Mop function only if you want it, and check tank size","App control and scheduled cleaning"]},
+  {name:"Handheld Steamer", cat:"Cleaning", emoji:"👔", query:"garment steamer handheld",
+   why:"Faster than ironing for shirts and curtains.",
+   look:["Heats up in under 60 seconds","200 ml+ water tank","1200W or more","Long cord"]},
+  {name:"Kitchen Knife Set", cat:"Cooking", emoji:"🔪", query:"kitchen knife set",
+   why:"One good chef's knife beats a big block of poor ones.",
+   look:["High-carbon stainless steel","Full-tang blade (steel runs through the handle)","A chef's, bread and paring knife cover most tasks","Comfortable, non-slip handle"]},
+  {name:"Smart Plug", cat:"Smart Home", emoji:"🔌", query:"smart plug wifi",
+   why:"The cheapest first step into a smart home: schedule lamps, fans or chargers.",
+   look:["Works with Alexa or Google Home if you use them","16A rating for heavier loads","UK-style 3-pin plug for UAE sockets","Energy monitoring is a bonus"]}
+];
+
+/* ============ CODE: normally no need to edit ============ */
+const enc = encodeURIComponent;
+const links = q => ({
+  amazon: `https://www.amazon.ae/s?k=${enc(q)}&tag=${enc(CONFIG.amazonTag)}`,
+  noon: wrap(CONFIG.noonPrefix, `https://www.noon.com/uae-en/search/?q=${enc(q)}`),
+  temu: wrap(CONFIG.temuPrefix, `https://www.temu.com/search_result.html?search_key=${enc(q)}`)
+});
+function wrap(prefix, url){ return prefix ? prefix + enc(url) : url; }
+
+const cats = ["All", ...new Set(PRODUCTS.map(p => p.cat))];
+let active = "All";
+const chipsEl = document.getElementById("chips"), grid = document.getElementById("grid"),
+      qEl = document.getElementById("q"), emptyEl = document.getElementById("empty");
+
+cats.forEach(c => {
+  const b = document.createElement("button");
+  b.className = "chip" + (c === active ? " on" : "");
+  b.textContent = c;
+  b.onclick = () => { active = c; [...chipsEl.children].forEach(x => x.classList.toggle("on", x.textContent === c)); render(); };
+  chipsEl.appendChild(b);
+});
+
+function render(){
+  const term = qEl.value.trim().toLowerCase();
+  const list = PRODUCTS.filter(p => (active === "All" || p.cat === active) &&
+    (!term || (p.name + " " + p.why + " " + p.look.join(" ")).toLowerCase().includes(term)));
+  grid.innerHTML = list.map(p => {
+    const l = links(p.query);
+    return `<article class="card">
+      <div class="top"><div class="emoji">${p.emoji}</div><div><div class="tag">${p.cat}</div><h3>${p.name}</h3></div></div>
+      <p>${p.why}</p>
+      <ul>${p.look.map(x => `<li>${x}</li>`).join("")}</ul>
+      <div class="btns">
+        <a class="btn amz" href="${l.amazon}" target="_blank" rel="sponsored noopener nofollow">Amazon.ae</a>
+        <a class="btn noon" href="${l.noon}" target="_blank" rel="sponsored noopener nofollow">Noon</a>
+        <a class="btn temu" href="${l.temu}" target="_blank" rel="sponsored noopener nofollow">Temu</a>
+      </div></article>`;
+  }).join("");
+  emptyEl.style.display = list.length ? "none" : "block";
+}
+qEl.addEventListener("input", render);
+render();
+</script>
+</body>
+</html>
